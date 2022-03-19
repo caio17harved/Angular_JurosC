@@ -9,4 +9,13 @@
 <input type="number" step="1" [(ngModel)]="n">
 
 <h3>Valor final:</h3>
-<h4>R$ {{getJuros()}}</h4>
+  <table border="1px">
+    <tr>
+      <td>Meses</td>
+      <td>Valor</td>
+    </tr>
+    <tr *ngFor="let t of somaJuros(); index as i">
+      <td>{{i}}</td>
+      <td>R$ {{t}}</td>
+    </tr>
+  </table>

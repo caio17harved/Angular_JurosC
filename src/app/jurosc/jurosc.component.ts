@@ -17,12 +17,13 @@ export class JuroscComponent implements OnInit {
 
   ngOnInit() {
   }
-  getJuros(){
-  
-  for(var i = 0; i => this.n; i++ ) {
-    return this.vp * (1 + this.j/100) ** this.n
+  somaJuros(){
+    let t = [];
+    for (let i = 0; i <= this.n; i++) {
+      var a = this.vp * (1 + this.j / 100) ** i;
+      t.push(a);
+    }
+
+    return t;
     }
   }
-
-
-}
