@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
 import { JurosComponent } from './juros/juros.component';
 import { RouterModule } from '@angular/router';
+import { JuroscComponent } from './jurosc/jurosc.component';
 
 @NgModule({
   imports:      [ 
@@ -14,13 +15,15 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     RouterModule.forRoot([
       {path: ' ', component: HomeComponent},
-      {path: 'juros', component: JurosComponent}
+      {path: 'juros', component: JurosComponent},
+      {path:  'jurosc', component:  JuroscComponent}
     ])
   ],
   declarations: [ AppComponent, 
     HelloComponent,
     HomeComponent,
-    JurosComponent
+    JurosComponent,
+    JuroscComponent
   ],
   bootstrap:    [ AppComponent ]
 })
